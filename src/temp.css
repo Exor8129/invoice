@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    width: 510px; /* Adjusted based on the widths of the boxes */
+    height: 203px; /* Adjusted to fit the tallest box */
+    
+    
+  }
+  
+  .partyDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    
+  }
+  
+  .partyDetails2 {
+    position: absolute;
+    top: 0;
+    left: 210px; /* Positioned to the right of the first box with a 10px gap */
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+  }
+  
+  .partyDetails3 {
+    position:absolute;
+    offset: -10px;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    width: 200px;
+    border: 1px solid black;
+  }
+  
