@@ -9,7 +9,7 @@ function App() {
     partyName: 'John Doe Enterprises',
     gstNo: '32AXCPV5409P1Z0',
     dlNo: 'KL-KKD-166278, KL-KKD-166279',
-    stateName: 'Kerala',
+    stateName: 'Kerala123',
     stateCode: 'KL',
     shippingAddress: 'Same as billing address',
     billingAddress: '19/3053A, Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008',
