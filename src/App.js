@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import InvoiceCard from './InvoiceCard';
 import Temp from './temp';
+import ItemTable from './components/items'
 
 function App() {
   const invoiceData = {
@@ -28,8 +29,9 @@ function App() {
             Calicut Medical College PO, Kozhikode-673008
           </div>
           <img src="/invoice_tag.png" alt="Invoice Tag" className="App-invoice-tag" />
-          <InvoiceCard invoiceData={invoiceData} />
-          {/* <Temp/> */}
+          {/* <InvoiceCard invoiceData={invoiceData} /> */}
+          <Temp/>
+          <ItemTable/>
 
           
         </header>
