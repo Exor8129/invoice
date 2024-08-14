@@ -1,13 +1,14 @@
-import React from 'react';
-import './items.css';
+import React from "react";
+import "./items.css";
 
 const ItemTable = () => {
-
   const invoiceData = {
     partyName: "John Doe Enterprises",
-    billingAddress: "19/3053A Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008",
+    billingAddress:
+      "19/3053A Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008",
     phoneNo: "909395934",
-    shippingAddress: "19/3053A Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008",
+    shippingAddress:
+      "19/3053A Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008",
     stateName: "Kerala",
     stateCode: "KL",
     gstNo: "32AXCPV5409P1Z0",
@@ -18,7 +19,19 @@ const ItemTable = () => {
     poDate: "2024-08-10",
     transport: "",
     items: [
-      { description: "Product 1", hsnSac: "1234", tax: "18%", batchNo: "B123", expiry: "2025-12", qty: "10", rate: "100", discount: "5%", amount: "950", cgst: "85.5", sgst: "85.5" },
+      {
+        description: "Product 1",
+        hsnSac: "1234",
+        tax: "18%",
+        batchNo: "B123",
+        expiry: "2025-12",
+        qty: "10",
+        rate: "100",
+        discount: "5%",
+        amount: "950",
+        cgst: "85.5",
+        sgst: "85.5",
+      },
       // Add more items as needed
     ],
     taxableValue: "1000",
@@ -32,9 +45,32 @@ const ItemTable = () => {
   };
 
   return (
-   <div className='itemTableheader'>
-    <div className='tableHead'><h>SL No</h></div>
-   </div>
+    <div className="itemTableheader">
+      <div className="tableHead">
+        <table>
+          <thead>
+            <tr>
+            <th  className="sl">Sl No</th>
+          <th>Item Description</th>
+          <th className="sl">HSN Code</th>
+          <th className="sl">Tax</th>
+          <th className="sl">Batch No</th>
+          <th className="sl">Expiry</th>
+          <th>Qty</th>
+          <th>Rate</th>
+          <th>Disc</th>
+          <th>CGST</th>
+          <th>SGST</th>
+          <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
   );
 };
 
