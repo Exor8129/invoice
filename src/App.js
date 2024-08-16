@@ -1,22 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import InvoiceCard from './InvoiceCard';
 import Temp from './temp';
-import ItemTable from './components/items'
+import ItemTable from './components/items';
+import FooterTable from './components/footerTable';
+
+import PopupForm from './components/PopupForm'; // Import the PopupForm
 
 function App() {
-  const invoiceData = {
-    invoiceNumber: 'INV-123456',
-    partyName: 'John Doe Enterprises',
-    gstNo: '32AXCPV5409P1Z0',
-    dlNo: 'KL-KKD-166278, KL-KKD-166279',
-    stateName: 'Kerala123',
-    stateCode: 'KL',
-    shippingAddress: 'Same as billing address',
-    billingAddress: '19/3053A, Bismi Complex, Ozhukkara, Calicut Medical College PO, Kozhikode-673008',
-    date: '2024-08-12',
-    orderNo: 'PO-78910',
-    poDate: '2024-08-10'
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    closePopup();
   };
 
   return (
@@ -29,12 +28,12 @@ function App() {
             Calicut Medical College PO, Kozhikode-673008
           </div>
           <img src="/invoice_tag.png" alt="Invoice Tag" className="App-invoice-tag" />
-          {/* <InvoiceCard invoiceData={invoiceData} /> */}
-          <Temp/>
-          <ItemTable/>
-
+          <Temp openPopup={openPopup} /> {/* Pass openPopup to Temp */}
+          <ItemTable />
+          <FooterTable />
           
         </header>
+        <PopupForm isOpen={isPopupOpen} onClose={closePopup} onSubmit={handleSubmit} />
       </div>
     </div>
   );

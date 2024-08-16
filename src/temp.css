@@ -1,9 +1,9 @@
 .container{
   /* background-color: beige; */
   width: 750px;
-  height: 250px;
+  height: 200px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   margin-top: 100px;
   margin-left: -30px;
@@ -19,7 +19,7 @@
 .partyNamehead{
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: 50px;
   padding-left: 10px;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
@@ -37,7 +37,7 @@
   
   padding-left: 10px;
   border-left: 1px solid #ddd;
-  height: 191px;
+  height: 151px;
 }
 .partyAddress{
   padding-left: 20px;
@@ -56,7 +56,7 @@
   flex-direction: column;
 
   border-bottom: 1px solid #ddd;
-  height: 60px;
+  height: 50px;
 }
 .gstno{
   padding-left: 20px;
@@ -78,7 +78,7 @@
   flex-direction: column;
   
   padding-left: 10px;
- height: 130px;
+ height: 100px;
 }
 .shipadd{
   padding-left: 10px;
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #ddd;
-  height: 60px;
+  height: 50px;
 }
 
 .stateCode {
@@ -135,7 +135,7 @@
   padding-left: 10px;
   /* padding-bottom: 25px; */
   border-bottom: 1px solid #ddd;
-  height: 60px;
+  height: 50px;
 }
 .dl{
   padding-left: 10px;
@@ -165,7 +165,7 @@
   padding-left: 5px;
   /* padding-right: 20px; */
   width: 100px;
-  height: 60px;
+  height: 50px;
 }
 
 .invoiceDate{
@@ -175,13 +175,13 @@
   border-right: 1px solid #ddd;
   text-align: center;
   width: 102px;
-  height: 60px;
+  height: 50px;
 }
 
 .poNum{
   display: flex;
   flex-direction: row;
-  height: 61px;
+  height: 50.5px;
 }
 
 .poNumber{
@@ -216,12 +216,12 @@
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  height: 69px;
+  height: 49px;
   /* padding-bottom: 10px; */
 }
 
 .courier{
   padding-left: 30px;
   padding-top: 5px;
-  font-size: 19px;
+  font-size: 13px;
 }
