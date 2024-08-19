@@ -1,0 +1,55 @@
+.tableHead{
+    position: relative;
+}
+.tableHead table {
+    margin-left: -30px;
+    width: 750px;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  
+  .tableHead th, .tableHead td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .tableHead th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+
+  .sl{
+    width: 10px;
+  }
+
+  .fit{
+    width:fit-content;
+  }
+
+  .tableHead tbody td {
+    font-size: 12px;
+  }
+
+.tableHead tbody tr {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.tableHead tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+  
+
+
+/* Hover effect */
+.item-table-body tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tableHead tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableHead table tbody tr:hover {
+  background-color: #f1f1f1;
+}

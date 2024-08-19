@@ -1,0 +1,60 @@
+/* This directly targets the column for the party and billing address */
+.party-billing-column {
+  width: 200px;
+  height: 250px;
+  /* background-color: beige; Adjust this value as needed */
+}
+.shipping{
+  width: 200px;
+  /* background-color: rgb(116, 116, 81); */
+}
+
+/* Ensures the table uses auto layout to respect the width of columns */
+.InvoiceTable table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensure the table respects the width of the columns */
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 20px;
+  height: 200px;
+ 
+}
+
+.InvoiceTable td, .InvoiceTable th {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  line-height: 1.4;
+  height: 50px;
+}
+
+.InvoiceTable td strong {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+}
+
+.InvoiceTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ItemTable th, .SummaryTable th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.ItemTable td, .SummaryTable td {
+  text-align: center;
+}
+
+.Footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.Declaration {
+  margin-top: 10px;
+  font-size: 10px;
+  text-align: left;
+}
