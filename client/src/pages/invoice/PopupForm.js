@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./PopupForm.css";
-import mockData from '../data/MOCK_DATA.json'; // Import mock data
+import mockData from '../../data/MOCK_DATA.json'; // Import mock data
 import NewCustomerForm from "./newcustomer"; // Import NewCustomerForm component
 
 const PopupForm = ({ isOpen, onClose, onSubmit }) => {

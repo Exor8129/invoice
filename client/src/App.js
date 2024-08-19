@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import Temp from './temp';
-import ItemTable from './components/items';
-import FooterTable from './components/footerTable';
+import ItemTable from './pages/invoice/items';
+import FooterTable from './pages/invoice/footerTable';
 
-import PopupForm from './components/PopupForm'; // Import the PopupForm
+import PopupForm from './pages/invoice/PopupForm'; // Import the PopupForm
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -40,3 +40,34 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// /////////Dashboard Test Code/////////
+
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Dashboard from './components/Dashboard';
+// import OverviewPage from './pages/overview/OverviewPage'; // Ensure paths are correct
+// import ReportsPage from './pages/Reports/ReportsPage';
+// import SettingsPage from './pages/settings/SettingsPage';
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<div>Home Page or Redirect</div>} />
+//         <Route path="/dashboard" element={<Dashboard />}>
+//           <Route path="overview" element={<OverviewPage />} />
+//           <Route path="reports" element={<ReportsPage />} />
+//           <Route path="settings" element={<SettingsPage />} />
+//         </Route>
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
+
+
