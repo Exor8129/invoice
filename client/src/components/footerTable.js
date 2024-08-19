@@ -114,7 +114,7 @@ const FooterTable = () => {
 
         
       </div>
-      <div><h1 className="computerGen">This a hijas ns Computer Generated Invoice</h1></div>
+      <div><h1 className="computerGen">This a hijas shafeeq ns Computer Generated Invoice</h1></div>
     </div>
   );
 };
