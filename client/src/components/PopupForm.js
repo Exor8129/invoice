@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./PopupForm.css";
 import mockData from '../data/MOCK_DATA.json'; // Import mock data
+import NewCustomerForm from "./newcustomer"; // Import NewCustomerForm component
 
 const PopupForm = ({ isOpen, onClose, onSubmit }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(mockData);
+  const [isNewCustomerOpen, setIsNewCustomerOpen] = useState(false); // State to control new customer popup
 
   useEffect(() => {
     // Filter data whenever the search term changes
@@ -16,6 +18,16 @@ const PopupForm = ({ isOpen, onClose, onSubmit }) => {
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
+  };
+
+  const handleAddNewCustomerClick = () => {
+    setIsNewCustomerOpen(true); // Open new customer popup
+  };
+
+  const handleNewCustomerSubmit = (newCustomerData) => {
+    // Handle new customer submission (e.g., add to database, update state, etc.)
+    console.log("New Customer Data:", newCustomerData);
+    setIsNewCustomerOpen(false); // Close new customer popup after submission
   };
 
   if (!isOpen) return null;
@@ -52,8 +64,16 @@ const PopupForm = ({ isOpen, onClose, onSubmit }) => {
           )}
         </ul>
 
-        {/* Optional submit button */}
+        {/* Buttons */}
         <button onClick={onSubmit}>Submit</button>
+        <button onClick={handleAddNewCustomerClick}>Add New Customer</button>
+
+        {/* New Customer Form Popup */}
+        <NewCustomerForm
+          isOpen={isNewCustomerOpen}
+          onClose={() => setIsNewCustomerOpen(false)} // Close the popup
+          onSubmit={handleNewCustomerSubmit} // Handle form submission
+        />
       </div>
     </div>
   );
