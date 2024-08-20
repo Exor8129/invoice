@@ -1,0 +1,166 @@
+/* General layout for dashboard */
+.dashboard {
+  display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 350px;
+  background-color: #b078d5;
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Ensure proper positioning of toggle icon */
+  transition: width 0.3s; /* Smooth transition for collapsing */
+}
+
+/* Content area styling */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* App logo styling */
+.App-logo {
+  width: 200px;
+  margin-top: 20px;
+  height: 60px;
+}
+
+/* Profile section styling */
+.profile {
+  background-color: #b078d5;
+  width: 125px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Profile hover effect */
+.profile:hover {
+  background-color: #b181d1;
+}
+
+/* Menu container styling */
+.menu_container {
+  padding: 20px;
+  background-color: #b078d5;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%; /* Full width of sidebar */
+}
+
+/* Menu list styling */
+.menu_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual menu item styling */
+.menu_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #b078d5;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Menu item hover effect */
+.menu_item:hover {
+  background-color: #b181d1;
+}
+
+/* Menu icon styling */
+.menu_icon {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+/* Menu name styling */
+.menu_name {
+  flex-grow: 1;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Menu arrow styling */
+.menu_arrow {
+  transition: transform 0.3s;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Rotated arrow for expanded menu */
+.menu_arrow.rotate {
+  transform: rotate(90deg);
+}
+
+/* Sub-menu list styling */
+.sub_menu_list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Individual sub-menu item styling */
+.sub_menu_item {
+  padding: 5px 10px;
+  background-color: #c194e0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sub-menu item hover effect */
+.sub_menu_item:hover {
+  background-color: #d1a1ec;
+}
+
+/* Toggle container for sidebar collapse */
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Toggle icon styling */
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Optional class for collapsed sidebar (if using a collapse state) */
+.sidebar.collapsed {
+  width: 80px; /* Adjust as needed for collapsed state */
+}
+
+.sidebar.collapsed .menu_name {
+  display: none; /* Hide text in collapsed state */
+}
+
+.sidebar.collapsed .menu_container {
+  padding: 10px;
+}
+
+.sidebar.collapsed .menu_item {
+  justify-content: center;
+}
+
+.sidebar.collapsed .menu_icon {
+  margin-right: 0;
+}
