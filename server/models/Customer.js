@@ -23,4 +23,4 @@ const customerSchema = new mongoose.Schema({
 });
 
 // Create and export the model based on the schema
-module.exports = mongoose.model('Customer', customerSchema, 'customer_regs');
+module.exports = mongoose.model('Customer', customerSchema, 'customer_register');
